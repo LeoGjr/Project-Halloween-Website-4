@@ -1,0 +1,139 @@
+/*=============== HOME ===============*/
+.home{
+   &__container{
+      height: 100vh;
+      padding-top: 7rem;
+      row-gap: 2rem;
+   }
+   &__data{
+      text-align: center;
+   }
+   &__title{
+      font: var(--font-regular) var(--biggest-font-size) var(--second-font);
+      line-height: 100%;
+      color: var(--title-color);
+      margin-bottom: .5rem;
+   }
+   &__description{
+      margin-bottom: 1.5rem;
+   }
+   &__button{
+      display: inline-flex;
+      background-color: var(--first-color);
+      color: var(--white-color);
+      font-weight: var(--font-semi-bold);
+      padding: 1rem 2rem;
+      border-radius: 4rem;
+      box-shadow: 0 16px 32px hsla(25, 90%, 40%, .3);
+      transition: background-color .4s;
+
+      &:hover{
+         background-color: var(--first-color-alt);
+      }
+   }
+   &__images{
+      position: relative;
+      justify-self: center;
+   }
+   &__img-1,
+   &__img-2{
+      width: 300px;
+   }
+   &__img-1{
+      filter: drop-shadow(0 16px 48px hsla(25, 90%, 40%, .5));
+   }
+   &__img-2{
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: flicker 8s linear infinite;
+   }
+}
+
+/* Animated images */
+@keyframes flicker{
+   0%{
+      opacity: 0;
+   }
+
+   31.98%{
+      opacity: 0;
+   }
+   32%{
+      opacity: 1;
+   }
+   32.8%{
+      opacity: 1;
+   }
+   32.82%{
+      opacity: 0;
+   }
+   34.98%{
+      opacity: 0;
+   }
+   35%{
+      opacity: 1;
+   }
+   35.7%{
+      opacity: 1;
+   }
+   35.72%{
+      opacity: 0;
+   }
+   36.98%{
+      opacity: 0;
+   }
+   37%{
+      opacity: 1;
+   }
+   37.6%{
+      opacity: 1;
+   }
+   37.62%{
+      opacity: 1;
+   }
+
+   67.98%{
+      opacity: 1;
+   }
+   68%{
+      opacity: 1;
+   }
+   68.4%{
+      opacity: 1;
+   }
+   68.42%{
+      opacity: 0;
+   }
+
+   95.98%{
+      opacity: 0;
+   }
+   96%{
+      opacity: 1;
+   }
+   96.7%{
+      opacity: 1;
+   }
+   96.72%{
+      opacity: 0;
+   }
+   98.98%{
+      opacity: 0;
+   }
+   99%{
+      opacity: 1;
+   }
+   99.6%{
+      opacity: 1;
+   }
+
+   100%{
+      opacity: 0;
+   }
+}
+
+/* Atropos class */
+.atropos-inner{
+   overflow: initial;
+}
